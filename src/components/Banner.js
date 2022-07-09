@@ -1,4 +1,4 @@
-import { useState, useEffect } from "react";
+import React, { useState, useEffect } from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import headerImg from "../assets/img/header-img.svg";
 import { ArrowRightCircle } from 'react-bootstrap-icons';
@@ -18,7 +18,7 @@ export const Banner = () => {
     let ticker = setInterval(() => {
       tick();
     }, delta);
-
+    console.log(index)
     return () => { clearInterval(ticker) };
   }, [text])
 

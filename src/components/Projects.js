@@ -1,3 +1,4 @@
+import React from 'react';
 import { Container, Row, Col } from "react-bootstrap";
 import { ProjectCard } from "./ProjectCard";
 import PostTest from "../assets/img/PostTest.png";
@@ -56,7 +57,7 @@ export const Projects = () => {
                         <div className={isVisible ? "animate__animated animate__fadeIn" : ""}>
                            <h2>Projects</h2>
                            <p>Project dibawah ini adalah project yang saya kerjakan selama magang/frelancer atapun sebagai karyawan dari sebuah perusahaan</p>
-                           <div class="row">
+                           <div className="row">
                               {
                                  projects.map((project, index) => {
                                     return (
