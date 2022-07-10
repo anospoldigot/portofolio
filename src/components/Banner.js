@@ -55,7 +55,7 @@ export const Banner = () => {
             <TrackVisibility>
               {({ isVisible }) =>
               <div className={isVisible ? "animate__animated animate__fadeIn" : ""}>
-                <span className="tagline">Salamat datang di portofolio saya</span>
+                <span className="tagline">Selamat datang di portofolio saya</span>
                 <h1>{`Hi! I'm Rama`} <span className="txt-rotate" dataPeriod="1000" data-rotate='[ "Fullstack Web Developer", "Mobile Developer", "Backend Developer" ]'><span className="wrap">{text}</span></span></h1>
                   <p>Saya adalah fullstack web dan mobile developer dengan pengalaman di atas 1 tahun.</p>
                   <button onClick={() => window.location.href = "https://www.linkedin.com/in/rama-dhan-11ba23227/"}>Let’s Connect <ArrowRightCircle size={25} /></button>
